@@ -33,12 +33,12 @@ def num_sum():
     ssum = 0
     while x:
         try:
-            x = int(x)
+            x = float(x)
         except ValueError:
             print("Not number! Enter again")
             x = input()
             continue
-        ssum += int(x)
+        ssum += float(x)
         x = input('Enter the number \n')
     print(ssum)
 
