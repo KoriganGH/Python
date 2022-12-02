@@ -1,4 +1,3 @@
-# 13_1-2
 class Animal:
 
     def __init__(self, newName):
@@ -24,10 +23,10 @@ class Cat(Animal):
     weight = 0
 
     def __init__(self):
-        print('Родился кот')
-        Animal.__init__(self,self.name)
+        print(f'Родился кот')
+        Animal.__init__(self, self.name)
 
-    def meow(self):
+    def makeNoise(self):
         print(f'{self.name} говорит Мяу')
 
 
@@ -52,20 +51,19 @@ obj.eat()
 
 print('\n')
 
-obj1 = Cat()
-obj1.name = 'Борис'
-obj1.meow()
-obj1.eat()
+obj_cat = Cat()
+obj_cat.name = 'Борис'
+obj_cat.makeNoise()
+obj_cat.eat()
 
 print('\n')
 
-obj2 = Dog()
-obj2.name = 'Шарик'
-obj2.makeNoise()
-obj2.eat()
+obj_dog = Dog()
+obj_dog.name = 'Шарик'
+obj_dog.makeNoise()
+obj_dog.eat()
 
 
-# 13_3
 class StringVar:
     text = ""
 
@@ -88,7 +86,6 @@ myString.set(input("Введите исправленное слово\n"))
 print(myString.get())
 
 
-# 13_4
 class Point:
     pos_x = 0
     pos_y = 0
